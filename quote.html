@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Honey Quotes</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="https://kit.fontawesome.com/18ec189b80.js" crossorigin="anonymous"></script>
+
+<style>
+form {
+    background: #7690a8;
+    display: inline-block;
+    width: 668px;
+    }
+
+  h2 {
+    color: rosybrown;
+    text-align: center;
+  }
+  label {
+    font-family: calibri;
+    color: white;
+  }
+  input[type=text] {
+    border-radius: 15px;
+    padding: 12px;
+    border:none;
+  }
+  input[type=email] {
+    padding: 5px;
+    background: aquamarine;
+    border: 1px solid#ffffff;
+  }
+  input[type=number] {
+    border-top-right-radius: 5px;
+    border: none;
+    padding: 3px;
+  }
+  input[type=checkbox] {
+    verical-align: middle;
+  }
+  .btn {
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 2px solid #fff;
+    font-size: 1rem;
+   }
+  .btn:hover {
+    background: lightgray;
+    cursor: pointer;
+    color: white;
+  }
+  #form-flex {
+    display: flex;
+  }
+ </style>
+</head>
+
+<body style="text-align: center;">
+  <header>
+<nav class="nav-bar">
+  
+<h1>honeyQuotes&trade;</h1>
+  
+  
+        
+<ul class="nav-menu">
+  
+      <li class="nav-item">
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+     <li class="nav-item">
+       <a href="quote.html" class="nav-link">Get a Quote</a>
+     </li>
+      <li class="nav-item" >
+        <a href="careers.html" class="nav-link">Careers</a>
+      </li>
+     <li class="nav-item" >
+        <a href="index.html" class="nav-link">About Us</a>
+      </li>
+</ul>
+  <div class="hamburger">
+  <span class="bar"></span>
+    <span class="bar"></span>
+      <span class="bar"></span>
+  </div>
+    </nav>
+    </header>  
+  <main>
+    <img src="./images/pexels-bee-farm.jpg" class="main-img">
+    <h1>Start Your Quote Here</h1>
+    <br><br>  
+      <!--form id="form" action="#">
+        
+        <div id="form-flex">
+          <div id="form-flex-item1">
+        <h2 style="text-align: left;">Personal Details</h2>
+            <div class="input-control">
+    <label for="fname">First Name</label>
+    <br>
+        <input type="text" name="first-name" id="first-name" placeholder="Enter your First Name" required/>
+            <div class="error"></div>
+          </div>
+          
+    <br><br>
+            <div class="input-control">
+     <label for="last-name">Last Name</label>
+    <br>
+    <input type="text" name="last-name" id="last-name" placeholder="Enter your Last Name" required>
+            <div class="error"></div>
+            </div>
+    <br><br>
+            <div class="input-control">
+    <label for="email">Email</label>
+    <br>
+    <input id="email" placeholder="Enter your email" type="email" required  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$">
+            <div class="error"></div>
+            </div>
+    <br><br>
+            <div class="input-control">
+        <label for="phone-number">Mobile Number</label>
+    <br>
+    <input type="number" id="phone-number" placeholder="Enter your Mobile Number" required min="10">
+        <div class="error"></div>  
+            </div>
+    <br><br>
+            <div class="input-control">
+    <label for="id">ID Number</label>
+    <br>
+    <input type="number" id="id-number" placeholder="ID Number" required min="13">
+            <div class="error"></div>
+            </div>
+          </div>
+    <br><br>
+        <div id="form-flex-item2">
+    <h2 style="text-align: left;">Business Details</h2>
+          <div class="input-control">
+    <label id="address-label" for="address">Business/Home Adresss</label>
+    <br>
+    <input type="text" id="address" placeholder="Enter Postal Address" required>
+          <div class="error"></div>
+          </div>
+    <br><br>
+          <div class="input-control">
+        <label id="registraion-label" for="number">Beekeeping Registration Number</label>
+    <br>
+    <input type="text" id="reg-number" placeholder="Enter Reg. Number" required>
+          <div class="error"></div>
+          </div>
+            <div class="input-control">
+    <br><br>
+        <label for="select">Where are you based?</label>
+    <br>
+    <select name="dropdown" id="dropdown" required>
+      <option value="Select option">Select option</option>
+      <option value="Northern Cape">Northern Cape</option>
+      <option value="Western Cape">Western Cape</option>
+      <option value="Limpopo">Limpopo</option>
+      <option value="Gauteng">Gauteng</option>
+      <option value="Kwa-Zule Natal">Kwa-Zulu Natal</option>
+      <option value="Mpumalanga">Mpumalanga</option>
+      <option value="Eastern Cape">Eastern Cape</option>
+      <option value="North West">North West</option>
+      <option value="Free State">Free State</option>
+    </select>
+          <div class="error"></div>
+            </div>
+        <br><br>
+            <div class="input-control">
+        <label for="town">Town</label>
+    <br>
+    <input type="text" id="town-label" placeholder="Enter Town Name" required>
+              <div class="error"></div>
+            </div>
+    <br><br>
+        <div class="input-control">    
+        <label for="number">Number of Apiaries</label>
+    <br>
+    <input type="number" id="number-apiaries" placeholder="Enter Number of Apiaries" required>
+          <div class="error"></div>
+        </div>
+    <br><br>
+       <div class="input-control">     
+    <label for="check-label">Beekeeping Activities</label>
+    <br><br>
+    <span><input type="checkbox" name="honey-pro" id="checkbox" value="0" checked></span>
+    <label for="checkbox">Honey Production</label>
+    <br>
+    <input type="checkbox" name="pol" id="checkbox" value="1" checked>
+   <label for="checkbox">Pollination</label>
+   <br>
+   <input type="checkbox" name="bee-rem" id="checkbox" value="2" checked>
+   <label for="checkbox">Bee Removal</label>
+          <div class="error"></div>
+          </div>
+          </div>
+           </div> 
+   <br>
+    <button class="btn" type="submit">SUBMIT</button>
+       <p>Quote Away And We Will Give You a Call</p> 
+        
+  </form-->
+  
+   </main>
+  <br><br>
+  <footer>
+    <div class="flex-container2">
+    
+    <div>
+<h3>IMPORTANT LINKS</h3>
+      <br>
+    <ul>
+      <li><a href="fraud&claims.html" target="_blank">Lodge a claim</a></li>
+        <li><a href="fraud&claims.html" target="_blank">Report fraud</a></li>
+    </ul>
+    </div>
+      <br>
+      <div>
+        <h3>BUSINESS HOURS</h3>
+        <br>
+        <h4>SALES</h4>
+        <br>
+        <p>Monday - Thursday: <span class="b-hours">08h00 - 20h00</span>
+          <br>
+Friday:   <span class="b-hours">08h00 - 18h00</span>
+          <br>
+Saturday:  <span class="b-hours"> 08h00 - 13h00</span>
+          <br>
+Sunday:   <span class="b-hours">Closed</span>
+          <br>
+Public Holiday:<span class="b-hours"> 08h00 - 13h00</span>
+</p>
+        <br>
+        <h4>SUPPORT</h4>
+        <br>
+        <p>
+
+Monday - Friday:<span class="b-hours"> 08h00 - 17h00</span>
+          <br>
+Saturday:  <span class="b-hours">08h00 - 13h00</span>
+          <br>
+Sunday: <span class="b-hours">Closed</span>
+          <br>
+Public Holiday: <span class="b-hours">Closed</span></p>
+      </div>
+      <br>
+      <div>
+        <h3>CONTACT US</h3>
+        <br>
+        <ul>
+<li>Email:honeyQuotes.ac.za</li>
+<li>Phone:+27 (0)65 883 7269</li>
+<li>Ontario Campus</li>
+<li>honeyQuotes</li>
+<li>14 Thulamela drive</li>        
+<li>Bloemfontein</li>
+<li>9300</li>
+        </ul>
+    </div>
+  <div>
+    <h3>SOCIAL MEDIA</h3>
+    <br>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-linkedin"></i>
+  </div>
+    </div>
+    <br>
+    <p class="last-p">honeyQuotes&trade; is a licensed non-life insurer and financial services provider. Long-term policies underwritten by First South African Risk Insurance, a licensed life insurer and financial services provider. Copyright © honeyQuotes&trade;  - All Rights Reserved. NCRCP 39/FSP 49401.</p>
+  </footer>
+    <!--script src="script.js"></script-->
+  <script src="quote script.js"></script>
+<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+  <script src="https://use.fontawesome.com/d049755de0.js"></script>
+</body>
+
+</html>
